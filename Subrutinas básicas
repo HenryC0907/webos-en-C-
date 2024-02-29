@@ -1,0 +1,48 @@
+Subrutinas usadas:
+
+void LeaArreglo(double A[], int n){ //Usuario crea Lista
+    double di;
+    for (int i =0; i<n; i++){
+        cout<<"d_"<<i<<" ";
+        cin>>di;
+        cout<<endl;
+        A[i]=di;
+    } //we dont return A, because it is C++
+    cout<<"los elementos son: "<<endl;
+    for (int j =0; j<n; j++){
+        cout<<A[j]<<",";   //se que A[-1] tiene coma aun siendo el ultimo, no se como correguirlo :) .
+    }
+    cout<<endl;
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+void impArreglo(int A[],int n) {  //Imprimir lista
+    for (int i = 0; i < n; i++)
+        cout << A[i] << " , ";
+    cout << endl;
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+#define col 20
+void leerMat(int A[][col], int m, int n){
+    for (int i=0; i<m; i++){
+        for (int j=0; j<n; j++){
+            cout<<"A["<<i<<"]["<<j<<"]= ";
+            cin>>A[i][j];
+            cout<<endl;
+        }
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+void impMat(int A[][col], int m, int n){
+    for (int i=0; i<m; i++){
+        for (int j=0; j<n; j++){
+            cout<<A[i][j]<<"\t";
+        }
+        cout<<endl;
+    }
+}
