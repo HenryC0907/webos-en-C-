@@ -78,6 +78,21 @@ void trMat(int A[][col], int n, int m){
   }
 }
 
+void transMat(int A[][col], int n, int m, int B[][col]){            
+  for (int i=0; i<n; i++)                                           
+    for (int j=0; j<m; j++)                                         
+      B[j][i] = A[i][j];                                            
+}   
+
+void linMat(int A[][col], int m, int n, int B[]){         // Mat_{n,m}(Z) |--> Z^{n*m}
+ierda.                                                              
+  for (int i=0; i<m; i++)                                           
+    for (int j=0; j<n; j++)                                         
+      B[j+(i*n)] = A[i][j];                                         
+                                                                    
+} 
+
+
 
 int main() {
   int n, m, w, a;
